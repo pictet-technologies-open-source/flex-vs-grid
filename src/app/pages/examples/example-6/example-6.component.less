@@ -38,7 +38,6 @@ a[href] {
     gap: 25px;
     background-color: var(--white-default);
     padding: 32px;
-    align-content: baseline;
     border-inline-end: 1px solid var(--grey-border-emphasis);
 }
 
@@ -68,29 +67,5 @@ a[href] {
 }
 
 /** STYLING - END **/
-
-.page {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: [header-start navigation-start footer-start] 300px [navigation-end content-start] 1fr [header-end footer-end content-end];
-    grid-template-rows: [header-start] auto [header-end navigation-start content-start] 1fr [navigation-end footer-start content-end] auto [footer-end];
-}
-
-.header {
-    grid-area: header;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-.content {
-    grid-area: content;
-    overflow-x: auto;
-}
-
-.navigation {
-    grid-area: navigation;
-}
 
 
