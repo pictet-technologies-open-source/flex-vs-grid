@@ -1,0 +1,32 @@
+<div class="global-layout">
+    @if (context) {
+        <div class="global-layout-header">
+            <div>
+                @if (previousContext?.url) {
+                    <button [routerLink]="previousContext?.url">
+                        <app-icon-base src="/assets/icons/fill/pictet/double-chevron-left.svg"></app-icon-base>
+                        Previous
+                    </button>
+                }
+            </div>
+
+            <div class="global-layout-header-middle-col">
+                <div class="global-layout-header-title headline-serif-md">Flex vs Grid</div>
+                <div class="paragraph-normal-regular-lg">{{ context.subTitle }}</div>
+            </div>
+
+
+            <div class="global-layout-header-end-col">
+                @if (nextContext?.url) {
+                    <button [routerLink]="nextContext?.url">Next
+                        <app-icon-base src="/assets/icons/fill/pictet/double-chevron-right.svg"></app-icon-base>
+                    </button>
+                }
+            </div>
+        </div>
+    }
+
+    <div class="global-layout-body-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+</div>

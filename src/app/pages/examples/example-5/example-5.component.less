@@ -1,0 +1,52 @@
+/** STYLING - START **/
+
+.card {
+    background-color: var(--white-default);
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow-md);
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.submit-btn {
+    justify-content: center;
+    background-color: var(--accent-default);
+    color: var(--white-default);
+    border-color: transparent;
+    font-size: 16px;
+
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: rgb(from var(--accent-default) r g b / 0.9);
+    }
+}
+
+/** STYLING - END **/
+
+.content-wrapper {
+    container-type: inline-size;
+    container-name: content-wrapper;
+}
+
+.contact-form {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-group {
+    display: grid;
+    gap: 4px;
+
+    &.full-width {
+        grid-column: 1 / -1;
+    }
+}
+
+@container content-wrapper (max-width: 500px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+}

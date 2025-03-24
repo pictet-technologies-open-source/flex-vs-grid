@@ -1,0 +1,68 @@
+<div class="content-wrapper">
+    <div class="card">
+        <h3>Profit</h3>
+        <div class="donut-wrapper">
+            <div class="donut-chart"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Revenue</h3>
+        <div class="donut-wrapper">
+            <div class="donut-chart" style="--donut-content: '350M'; --donut-filled-bg-deg: 90deg; --donut-bg-color: var(--basic-bg-chart-graph-order-10c-4g-willow)"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Expenses</h3>
+        <div class="donut-wrapper">
+            <div class="donut-chart" style="--donut-content: '98M'; --donut-filled-bg-deg: 170deg; --donut-bg-color: var(--basic-bg-chart-graph-order-3c-7g-pepper)"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Forecast</h3>
+        <div class="donut-wrapper">
+            <div class="donut-chart" style="--donut-content: '478M'; --donut-filled-bg-deg: 240deg; --donut-bg-color: var(--basic-bg-chart-graph-order-5c-9g-ocean)"></div>
+        </div>
+    </div>
+
+    <div class="card large">
+        <h3>Profit over the past 12 months</h3>
+        <div class="bar-chart">
+            @for (data of barChartData; track data.month) {
+                <div>{{data.month}}</div>
+                <div class="bar" [style.--bar-height]="data.value + 'px'"></div>
+                <div>{{data.value}}M</div>
+            }
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Compared to last year</h3>
+        <div class="line-wrapper">
+            <div>Profit</div>
+            <div>+25%
+                <app-icon-base src="/assets/icons/fill/pictet/arrow-up.svg" class="arrow-up"></app-icon-base>
+            </div>
+        </div>
+        <div class="line-wrapper">
+            <div>Revenue</div>
+            <div>+9%
+                <app-icon-base src="/assets/icons/fill/pictet/arrow-up.svg" class="arrow-up"></app-icon-base>
+            </div>
+        </div>
+        <div class="line-wrapper">
+            <div>Expenses</div>
+            <div>-13%
+                <app-icon-base src="/assets/icons/fill/pictet/arrow-down.svg" class="arrow-down"></app-icon-base>
+            </div>
+        </div>
+        <div class="line-wrapper">
+            <div>Forecast</div>
+            <div>+34%
+                <app-icon-base src="/assets/icons/fill/pictet/arrow-up.svg" class="arrow-up"></app-icon-base>
+            </div>
+        </div>
+    </div>
+</div>

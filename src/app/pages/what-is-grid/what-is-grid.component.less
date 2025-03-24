@@ -1,0 +1,30 @@
+/** STYLING - START **/
+
+.grid-container {
+    counter-reset: counter-div;
+}
+
+.grid-container > div {
+    width: 200px;
+    height: 200px;
+    background-color: var(--tertiary-7c-3g-orange-orange);
+    counter-increment: counter-div 1;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        content: counter(counter-div);
+        color: var(--white-default);
+        font-size: 20px;
+    }
+}
+
+/** STYLING - END **/
+
+.grid-container {
+    display: grid;
+    gap: 8px;
+}

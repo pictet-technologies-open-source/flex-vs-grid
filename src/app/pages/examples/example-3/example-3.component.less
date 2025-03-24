@@ -1,0 +1,47 @@
+/** STYLING - START **/
+
+.card {
+    border-radius: 8px;
+    background-color: var(--white-default);
+    height: 500px;
+    width: 450px;
+    box-shadow: var(--box-shadow-md);
+    overflow: hidden;
+
+    > img {
+        object-fit: cover;
+        width: 100%;
+        height: 45%;
+    }
+}
+
+.card-content-wrapper {
+    padding: 4px 24px 24px 24px;
+}
+
+.card-content-title {
+    display: flex;
+    gap: 16px;
+    padding-block-end: 12px;
+}
+
+.card-content-text {
+    margin-bottom: 12px;
+}
+
+.card-content-tags-wrapper > div {
+    background-color: rgb(from var(--tertiary-9c-5g-purple-default) r g b / 0.3);
+    color: var(--tertiary-9c-5g-purple-default);
+    border: 1px solid var(--tertiary-9c-5g-purple-default);
+    padding-inline: var(--spacing-xs);
+    border-radius: var(--border-radius-xs);
+}
+
+/** STYLING - END **/
+
+.card-content-tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+

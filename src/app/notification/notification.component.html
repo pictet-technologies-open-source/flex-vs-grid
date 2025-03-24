@@ -1,0 +1,19 @@
+<div class="notifications-wrapper">
+    @for (notification of notifications; track notification.id) {
+        <div class="notification">
+            <div class="notification-content">
+                <div style="padding-top: 2px">
+                    <app-icon-base src="/assets/icons/outline/menu/knowledge.svg" size="40"></app-icon-base>
+                </div>
+                <div>
+                    <div class="notification-title">{{ notification.title }}</div>
+                    <div [innerHTML]="notification.message"></div>
+                </div>
+                <div>
+                    <app-icon-base src="/assets/icons/outline/pictet/close.svg" (click)="notificationService.removeNotification(notification.id)" style="cursor: pointer"></app-icon-base>
+                </div>
+            </div>
+            <div class="notification-progress-bar"></div>
+        </div>
+    }
+</div>

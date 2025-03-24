@@ -1,0 +1,104 @@
+/** STYLING - START **/
+
+h3 {
+    margin-bottom: 24px;
+}
+
+.card {
+    background-color: var(--white-default);
+    border-radius: 8px;
+    padding: 24px;
+
+}
+
+// DONUT CHART
+
+.donut-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.donut-chart {
+    --donut-bg-color: var(--tertiary-9c-5g-purple-default);
+    --donut-filled-bg-deg: 135deg;
+    --donut-content: "200M";
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: conic-gradient(var(--donut-bg-color) var(--donut-filled-bg-deg), var(--basic-neutrals-offwhite-grey200) var(--donut-filled-bg-deg));
+    position: relative;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 25%), 0 0 1px 0 rgb(0 0 0 / 4%);
+
+    &:before {
+        content: var(--donut-content);
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        position: absolute;
+        inset: 0;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        transform: translate(50%, 50%);
+        background-color: var(--white-default);
+        box-shadow: inset 0 2px 6px 0 rgb(0 0 0 / 20%), 0 0 1px 0 rgb(0 0 0 / 4%);
+    }
+}
+
+// BAR CHART
+
+.bar-chart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    column-gap: 4px;
+    row-gap: 8px;
+    justify-items: center;
+}
+
+.bar {
+    --bar-height: 200px;
+
+    height: var(--bar-height);
+    width: 8px;
+    border-radius: 4px;
+    background-color: var(--tertiary-7c-3g-orange-orange);
+    align-self: end;
+}
+
+
+// --
+
+.line-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-border-default);
+
+    &:not(:last-of-type) {
+        margin-bottom: 8px;
+    }
+}
+
+.arrow-up {
+    color: var(--status-success-default);
+}
+
+.arrow-down {
+    color: var(--status-error-default);
+}
+
+/** STYLING - END **/
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    grid-auto-flow: dense;
+}
+
+.card.large {
+    grid-column: span 2;
+}
+

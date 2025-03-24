@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: var(--basic-bg-main-default);
+    font-family: "LardySans", sans-serif;
+    color: var(--basic-fg-main-default);
+    font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+input, textarea {
+    font-family: "LardySans", sans-serif;
+    color: var(--basic-fg-main-default);
+    font-size: 16px;
+    outline: none;
+    border-radius: var(--border-radius-xs);
+    padding: var(--spacing-sm-nudge) var(--spacing-md-nudge);
+    border: var(--border-thickness-sm) solid var(--grey-border-emphasis);
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid var(--accent-default);
+    color: var(--accent-default);
+    border-radius: 4px;
+    padding-inline: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+        background-color: var(--accent-hover-default);
+    }
+}
+
+.notification code {
+    background-color: var(--ag-grid-line-bg-emphasis-label);
+    border-radius: 2px;
+    color: var(--white-default);
+    padding-inline: 4px;
+}
