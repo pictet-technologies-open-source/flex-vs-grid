@@ -27,17 +27,6 @@
         </div>
     </div>
 
-    <div class="card large">
-        <h3>Profit over the past 12 months</h3>
-        <div class="bar-chart">
-            @for (data of barChartData; track data.month) {
-                <div>{{data.month}}</div>
-                <div class="bar" [style.--bar-height]="data.value + 'px'"></div>
-                <div>{{data.value}}M</div>
-            }
-        </div>
-    </div>
-
     <div class="card">
         <h3>Compared to last year</h3>
         <div class="line-wrapper">

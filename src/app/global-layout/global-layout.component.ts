@@ -43,29 +43,29 @@ export class GlobalLayoutComponent {
             url: '/what-is-grid',
             subTitle: 'What is Grid?',
         },
-        {
-            url: '/examples/1',
-            subTitle: 'Example 1 (Layout 3 columns)',
-        },
+        // {
+        //     url: '/examples/1',
+        //     subTitle: 'Example 1 (Layout 3 columns)',
+        // },
         {
             url: '/examples/2',
-            subTitle: 'Example 2 (Navigation bar)',
+            subTitle: 'Example: Navigation bar',
         },
-        {
-            url: '/examples/3',
-            subTitle: 'Example 3 (List of tags)',
-        },
+        // {
+        //     url: '/examples/3',
+        //     subTitle: 'Example 3 (List of tags)',
+        // },
         {
             url: '/examples/4',
-            subTitle: 'Example 4 (Responsive dashboard like FrontGate)',
+            subTitle: 'Example: Responsive dashboard like FrontGate',
         },
         {
             url: '/examples/5',
-            subTitle: 'Example 5 (Form)',
+            subTitle: 'Example: Form',
         },
         {
             url: '/examples/6',
-            subTitle: 'Example 5 (Application layout)',
+            subTitle: 'Example: Application layout',
         },
         {
             url: '/conclusion',
