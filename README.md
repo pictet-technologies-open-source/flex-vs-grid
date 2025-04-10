@@ -1,59 +1,12 @@
 # FlexVsGrid
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+Repository containing code presented during the technical talk [Flexbox vs Grid](https://teams.microsoft.com/l/meetingrecap?driveId=b%21jo5Qevgbf0GSnDHGk0vhLu9m7SDcDulHnpKp6FD2kULV95KnrH_wR5NxUXUEBcVE&driveItemId=01QD6VJ4DQLCYCLKKABFDYJEW3K7X3XFZ5&sitePath=https%3A%2F%2Fpictettechnologiessa-my.sharepoint.com%2F%3Av%3A%2Fg%2Fpersonal%2Fmheitzmann_pictet-technologies_com%2FEXBYsCWpQAlHhJLbV--7lz0BBlCHJVYrmDTA0OVqRbp1Hg&fileUrl=https%3A%2F%2Fpictettechnologiessa-my.sharepoint.com%2Fpersonal%2Fmheitzmann_pictet-technologies_com%2FDocuments%2FEnregistrements%2FCSS%2520Talk%2520-%2520Flexbox%2520vs%2520Grid-20250404_150021-Meeting%2520Recording.mp4%3Fweb%3D1&iCalUid=040000008200E00074C5B7101A82E00800000000DEAEA55BABA3DB01000000000000000010000000851E045D20AEB44C8708CA7797D596FC&threadId=19%3Ameeting_Y2VlZjAyYTMtYmVkMi00NzBhLWE2MTEtODA3YmMyYTdiNTIz%40thread.v2&organizerId=f1107558-3ed3-4787-b859-b5e388c6161d&tenantId=842fa93c-94c7-4ad0-b2eb-837698600e26&callId=ef17619d-82af-486e-9ca0-7ce74576c752&threadType=Meeting&meetingType=Scheduled&subType=RecapSharingLink_RecapCore) on 04/04/2025
 
-## Development server
+## How to start the application?
 
-To start a local development server, run:
-
-```bash
-ng serve
+```
+npm install
+npm run build
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
